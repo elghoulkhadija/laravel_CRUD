@@ -76,14 +76,8 @@ prix_p
 quantite
 
 🌐 6️⃣ Routes principales
-Méthode	URL	Description
-GET	/produits	Lister les produits
-GET	/produits/create	Formulaire d’ajout
-POST	/produits	Enregistrer un produit
-GET	/produits/{id}	Détails d’un produit
-GET	/produits/{id}/edit	Modifier
-PUT	/produits/{id}	Mettre à jour
-DELETE	/produits/{id}	Supprimer
+<img width="562" height="229" alt="image" src="https://github.com/user-attachments/assets/4c12e395-69de-4274-9399-1e73c3e753a0" />
+
 🎨 7️⃣ Interface utilisateur
 
 Utilise :
