@@ -7,23 +7,24 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-#🛒 CRUD Produits — Laravel 10
+
+# 🛒 CRUD Produits — Laravel 10
 
 Application simple en Laravel permettant de gérer des produits :
 
-##➕ Ajouter un produit
+## ➕ Ajouter un produit
 
-##📄 Lister les produits
+## 📄 Lister les produits
 
-##✏️ Modifier un produit
+## ✏️ Modifier un produit
 
-##❌ Supprimer un produit
+## ❌ Supprimer un produit
 
-##👁️ Voir le détail d’un produit
+## 👁️ Voir le détail d’un produit
 
 Projet idéal pour l’apprentissage (routes, contrôleurs, vues, migrations, seeders).
 
-#🚀 1️⃣ Prérequis
+# 🚀 1️⃣ Prérequis
 
 Assure-toi d’avoir installé :
 
@@ -33,28 +34,28 @@ Composer
 
 MySQL / MariaDB
 
-#📥 2️⃣ Installation
+# 📥 2️⃣ Installation
    git clone https://github.com/elghoulkhadija/laravel_CRUD.git
                 cd laravel_CRUD
    composer install
 
 
 
- #🗄️ 4️⃣ Base de données
+ # 🗄️ 4️⃣ Base de données
 
-###Dans le fichier .env, configure :
+### Dans le fichier .env, configure :
 
         DB_DATABASE=...
         DB_USERNAME=root
         DB_PASSWORD=
 
 
-##Crée les tables ou Exécuter de la migration :
+## Crée les tables ou Exécuter de la migration :
 
         php artisan migrate
 
 
-##Remplir la base avec des données (optionnel) :
+## Remplir la base avec des données (optionnel) :
 
         php artisan db:seed
 
@@ -63,43 +64,43 @@ MySQL / MariaDB
         
         php artisan migrate:fresh --seed
 
-#📚 5️⃣ Modèle — Produits
+# 📚 5️⃣ Modèle — Produits
 
-##Champs principaux :
+## Champs principaux :
 
-###nom_p
+### nom_p
 
-###description_p
+### description_p
 
-###prix_p
+### prix_p
 
-###quantite
+### quantite
 
-#🌐 6️⃣ Routes principales
+# 🌐 6️⃣ Routes principales
 
 
+<img width="464" height="229" alt="image" src="https://github.com/user-attachments/assets/bbff096c-863b-4e19-8a03-5aaf7ea20ee2" />
 
-    <img width="562" height="229" alt="image" src="https://github.com/user-attachments/assets/4c12e395-69de-4274-9399-1e73c3e753a0" />
     
 
-#🎨 7️⃣ Interface utilisateur
+# 🎨 7️⃣ Interface utilisateur
 
-##Utilise :
+## Utilise :
 
-###Tailwind CSS (CDN)
+### Tailwind CSS (CDN)
 
-###Blade Templates
+### Blade Templates
 
-#▶️ 8️⃣ Lancer le projet
+# ▶️ 8️⃣ Lancer le projet
 
      php artisan serve
 
 
-##Puis ouvrir :
+## Puis ouvrir :
 
  👉 http://127.0.0.1:8000
 
-🧩 Structure du projet
+# 🧩 Structure du projet
 
         app/
          └── Http/Controllers/ProduitController.php
@@ -117,7 +118,7 @@ MySQL / MariaDB
              ├── edit.blade.php
              └── detail.blade.php
 
-#🎯 Objectifs pédagogiques
+# 🎯 Objectifs pédagogiques
 
     Comprendre le pattern MVC
     
