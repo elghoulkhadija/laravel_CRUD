@@ -7,60 +7,133 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-## About Laravel
+🛒 CRUD Produits — Laravel 10
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Application simple en Laravel permettant de gérer des produits :
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+➕ Ajouter un produit
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+📄 Lister les produits
 
-## Learning Laravel
+✏️ Modifier un produit
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+❌ Supprimer un produit
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+👁️ Voir le détail d’un produit
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+Projet idéal pour l’apprentissage (routes, contrôleurs, vues, migrations, seeders).
 
-## Laravel Sponsors
+🚀 1️⃣ Prérequis
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+Assure-toi d’avoir installé :
 
-### Premium Partners
+PHP ≥ 8.1
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+Composer
 
-## Contributing
+MySQL / MariaDB
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+📥 2️⃣ Installation
+git clone https://github.com/elghoulkhadija/laravel_CRUD.git
+cd laravel_CRUD
+composer install
 
-## Code of Conduct
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
 
-## Security Vulnerabilities
+🗄️ 4️⃣ Base de données
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+Dans le fichier .env, configure :
 
-## License
+DB_DATABASE=...
+DB_USERNAME=root
+DB_PASSWORD=
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+Crée les tables ou Exécuter de la migration :
+
+php artisan migrate
+
+
+Remplir la base avec des données (optionnel) :
+
+php artisan db:seed
+
+
+ou :
+
+php artisan migrate:fresh --seed
+
+📚 5️⃣ Modèle — Produits
+
+Champs principaux :
+
+nom_p
+
+description_p
+
+prix_p
+
+quantite
+
+🌐 6️⃣ Routes principales
+Méthode	URL	Description
+GET	/produits	Lister les produits
+GET	/produits/create	Formulaire d’ajout
+POST	/produits	Enregistrer un produit
+GET	/produits/{id}	Détails d’un produit
+GET	/produits/{id}/edit	Modifier
+PUT	/produits/{id}	Mettre à jour
+DELETE	/produits/{id}	Supprimer
+🎨 7️⃣ Interface utilisateur
+
+Utilise :
+
+Tailwind CSS (CDN)
+
+Blade Templates
+
+▶️ 8️⃣ Lancer le projet
+    php artisan serve
+
+
+Puis ouvrir :
+
+👉 http://127.0.0.1:8000
+
+🧩 Structure du projet
+        app/
+         └── Http/Controllers/ProduitController.php
+        
+        database/
+         ├── migrations/
+         ├── factories/
+         |    ProduitFactory.php
+         └── seeders/
+             └── ProduitSeeder.php
+        
+        resources/
+         └── views/
+             ├── index.blade.php
+             ├── Ajouter.blade.php
+             ├── edit.blade.php
+             └── detail.blade.php
+
+🎯 Objectifs pédagogiques
+
+Comprendre le pattern MVC
+
+Créer un CRUD complet
+
+Utiliser migrations,controller ,view ,Model , seeders et factories
+
+Manipuler Blade + Tailwind
+
+
+
+
+
+
+
+
+
+.
