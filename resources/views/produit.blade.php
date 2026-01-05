@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Document</title>
 </head>
@@ -32,19 +33,19 @@
             <td class="px-4 py-2 border text-center space-x-2">
                 <button>
                     <a href="{{ route('produits.show', $produit->id) }}" class="px-3 py-1 font-semibold rounded bg-green-300 text-white hover:bg-green-600">
-                    show
+                       <i class="fa fa-eye"></i>  show
                     </a>
                 </button>
                 <button>
                     <a href="{{ route('produits.edit', $produit->id) }}" class="px-3 py-1 font-semibold rounded bg-amber-500 text-white hover:bg-amber-600">
-                    Modifier
+                     <i class="fa-solid fa-pen-to-square"></i> Modifier
                     </a>
                 </button>
                 <form action="{{ route('produits.destroy', $produit->id) }} " method="POST" class="inline">
                     @csrf
                     @method('DELETE')
                     <button onclick="return confirm('Êtes-vous sûr de vouloir supprimer ce produit ?')" type="submit" class="px-3 py-1 font-semibold rounded bg-red-500 text-white hover:bg-red-600">
-                        Supprimer
+                        <i class="fa-solid fa-trash"></i> Supprimer
                     </button>
                 </form>
                 
