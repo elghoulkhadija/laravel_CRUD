@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-<div class="max-w-xl mx-auto mt-8 bg-white shadow-md rounded-lg p-6">
+<div class="max-w-xl mx-auto mt-8 bg-gray-100 shadow-md rounded-lg p-6">
     <h1 class="text-2xl font-bold mb-6 text-gray-700">Modifier un Produit</h1>
 
     <form action="{{ route('produits.update', $produits->id) }}" method="POST" class="space-y-4">
@@ -43,7 +43,7 @@
 
         <button
             type="submit"
-            class="w-full bg-blue-600 text-white py-2 rounded-lg font-semibold hover:bg-blue-700 transition">
+            class="w-full bg-green-200 text-amber-800 py-2 rounded-lg font-semibold hover:bg-green-400 transition">
             Modifier
         </button>
     </form>

@@ -8,7 +8,7 @@
 </head>
 <body>
     
-<div class="max-w-xl mx-auto mt-8 bg-white shadow-md rounded-lg p-6">
+<div class="max-w-xl mx-auto mt-8 bg-blue-50 shadow-md rounded-lg p-6">
     <h1 class="text-2xl font-bold mb-6 text-gray-700">Ajouter un Produit</h1>
 
     <form action="{{ route('produits.store') }}" method="POST" class="space-y-4">
